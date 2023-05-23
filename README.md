@@ -1,1 +1,1 @@
-# Mini_project
+# Mini_projecthenlo, My mini_project is about Travel and Tours. where people can choose specific country they want to travel and get their budget friendly deals. i used HTML and CSS/Bootstrap.
