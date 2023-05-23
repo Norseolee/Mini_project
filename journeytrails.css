@@ -1,20 +1,233 @@
-.left_nav {
-  justify-content: end;
+/* =========== FONTS ================== */
+.Journeyfonts {
+  color: #86b817 !important;
+  font-family: "Nunito";
+}
+.Allfonts {
+  font-family: "Nunito";
+}
+.hideunderlink {
+  color: #86b817;
+  text-decoration: none;
+}
+.hideunderlink:hover {
+  color: #618612;
 }
 
-#bgcolor {
-  background-color: rgb(248, 246, 244);
+/* =========== FONTS ================= */
+/* 
+
+
+
+*/
+/* =========== BUTTON ================= */
+.btn {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background-color: #86b817;
+  border-color: #86b817;
+}
+.btn-primary,
+.btn.btn-secondary {
+  color: White;
+}
+.btn:hover {
+  background-color: #618612;
+  border-color: #618612;
+}
+/* =========== BUTTON END ============= */
+/*  
+
+
+
+*/
+/* ===================== NAVIGATIONS =============================== */
+.searchbutton {
+  margin-top: 7px;
 }
 
-.navcolorbg {
-  background-color: rgb(227, 244, 244);
+.hero-header {
+  background-image: url(pictures/Journeytrailsvid.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-light .nav-link {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  margin-right: 25px;
+  padding: 35px 0;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #86b817 !important;
+}
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+    margin-left: 0;
+    color: var(--dark) !important;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-light {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+    z-index: 999;
+  }
+}
+@media (min-width: 992px) {
+  .backgroundblack {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+/* ===================== END OF NAVIGATION ========================= */
+/* 
+
+
+
+*/
+/* ===================== BANNER ==================================== */
+.banner {
+  background-color: rgb(217, 241, 165, 0.2);
+  color: rgb(137, 189, 25);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+ul,
+li {
+  list-style-type: none;
+}
+/* ===================== BANNER END ================================ */
+/* 
+
+
+
+*/
+/* ===================== TOUR GUIDE ================================ */
+.borderngcards {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-align: center;
+  display: contents;
+  justify-content: center;
+}
+.cards {
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 20px;
+  border: 1px rgba(211, 211, 211, 0.4886) solid;
+  margin: 10px;
+}
+.cards:hover {
+  box-shadow: 5px 5px 20px lightgray;
+}
+.cardsprofile {
+  width: 200px;
+  border-radius: 20%;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+.cardsprofile:hover {
+  outline: 4px solid lightgray;
+}
+.cards p {
+  color: rgb(178, 218, 118);
+}
+.social-media {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+h1 {
+  margin: 20px 0;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================== END OF TOUR GUIDE ========================= */
+/* 
+
+
+
+*/
+/* ===================== SERVICE STYLE END ===================== */
+.borderservices {
+  border: 1px lightgrey solid;
+  border-radius: 10px;
+}
+.borderservices:hover {
+  background-color: rgb(228, 240, 201);
+  box-shadow: 5px 5px 5px lightgray;
+}
+/* ===================== SERVICE STYLE END ===================== */
+/* 
+
+
+
+
+*/
+/* ===================== DISTINATION STYLES ===================== */
+.destinationimg {
+  border-radius: 8px;
+  object-fit: cover;
+}
+a:hover .destinationimg {
+  transform: scale(1.01);
+}
+@media screen and (min-width: 1600px) {
+  .destinationimg {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-device-width: 820px) {
+  .destinationimg {
+    width: 350px;
+    height: 250px;
+  }
+}
+/* ===================== DISTINATION STYLES END ===================== */
+/* 
+
+
+
+*/
+/* ===================== PACKAGES =================================== */
+.cardtall {
+  height: 300px;
+}
+/* ===================== PACKAGES END ================================ */
+/* 
+  
+  
+  
+  
+  */
+/* ===================== FOOTER ===================================== */
+
+.footercolor {
+  background-color: rgb(196, 223, 223);
 }
 
-.navlogo {
-  padding-bottom: 10px;
+#footfoot {
+  background-color: green;
 }
-
-.navline:hover {
-  text-decoration: underline;
-  color: grey;
-}
+/* ===================== FOOTER END ================================ */

@@ -4,61 +4,729 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" />
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my css files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- my font links from google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:ital,wght@0,700;1,600&display=swap"
+      rel="stylesheet" />
+    <!-- my logo and title head -->
     <link rel="stylesheet" href="journeytrails.css" />
-    <link rel="stylesheet" href="fonts.css" />
-    <link rel="icon" type="image/x-icon" href="pictures/logo.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="pictures/logo.png"
+      style="width: 30px" />
     <title>Journey Trails</title>
   </head>
-  <body class="Port" id="bgcolor">
-    <nav class="container mt-1">
-      <nav class="navbar navbar-expand-lg border border-0 rounded-3 navcolorbg">
-        <div class="container-fluid port">
-          <a class="navbar-brand" href="#"
-            ><img src="pictures/logo.png" width="30px" class="navlogo" />
-            <span>Journey Trails</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link navline" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navline dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >Distination</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navline" href="#">Packages/Tours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navline" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navline" href="#"
-                  ><img src="PICTURES/login.png" width="30px" />
-                </a>
-              </li>
-            </ul>
+  <!---->
+  <body class="Allfonts">
+    <!-- =================== FRONT PICTURE ========== -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 backgroundblack">
+        <a href="" class="navbar-brand p-0">
+          <h1 class="Journeyfonts ms-2">
+            <img src="PICTURES/logo.png" alt="logo" width="40px" /> Tourist
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="package.html" class="nav-item nav-link">Packages</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Packages</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="destination.html" class="dropdown-item">Destination</a>
+                <a href="booking.html" class="dropdown-item">Booking</a>
+                <a href="team.html" class="dropdown-item">Travel Guides</a>
+                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                <a href="404.html" class="dropdown-item">404 Page</a>
+              </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
+          <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
         </div>
       </nav>
-    </nav>
+
+      <div class="container-fluid bg-primary py-5 mb-2 hero-header">
+        <div class="container py-5">
+          <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+              <h1 class="display-3 text-white mb-3">
+                Uncover trails, Create memories
+              </h1>
+              <p class="fs-4 text-white mb-4">
+                Embark on epic journeys, uncovering hidden trails and creating
+                unforgettable memories.
+              </p>
+              <div class="position-relative w-75 mx-auto">
+                <!-- input search -->
+                <input
+                  type="text"
+                  class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
+                  placeholder="Ex. Palawan" />
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2 searchbutton">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =================== END OF FRONT PICTURE === -->
+
+    <!-- =================== BANNER ================= -->
+    <div class="container">
+      <div class="row">
+        <ul class="rounded banner">
+          <li class="mylist">
+            <i class="bi bi-clipboard2-x-fill me-1"></i>Free Cancellation
+          </li>
+          <li class="mylist">
+            <i class="bi bi-shield-fill-check me-1"></i>Best Price Guarantee
+          </li>
+          <li class="mylist">
+            <i class="bi bi-calendar2-check-fill me-1"></i>Easy Booking
+          </li>
+          <li class="mylist">
+            <i class="bi bi-info-square-fill me-1"></i>Comprehensive Destination
+            Guides
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- =================== BANNER END ============= -->
+
+    <!-- =================== ABOUT US SECTION ======= -->
+    <div class="container py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img
+                src="PICTURES/travel.png"
+                class="img-fluid position-absolute w-100 h-100"
+                class="rounded"
+                alt="travel.png"
+                style="object-fit: cover" />
+            </div>
+          </div>
+          <div class="col-lg-5 ms-3">
+            <!-- PARAGRAPH -->
+
+            <h5 class="section-title bg-white text-start Journeyfonts pe-3">
+              About Us
+            </h5>
+            <h2 class="mb-4">
+              Welcome to <span class="Journeyfonts">Journey Trails</span>
+            </h2>
+            <p class="m-3">
+              Embark on unforgettable adventures, connect with captivating
+              cultures, and create lifelong memories. Let us guide you on a
+              transformative journey beyond the ordinary.
+            </p>
+            <p class="m-3">
+              Join us as we explore the uncharted trails together. Get ready to
+              be inspired and embrace the thrill of discovery. Welcome to an
+              extraordinary world of travel experiences.
+            </p>
+            <div class="row gy-2 gx-4 mb-4">
+              <div class="col-sm-6 Journeyfonts">
+                <p class="mb-0">
+                  <span class="fa fa-arrow-right me-2"></span>First Class Flight
+                </p>
+              </div>
+              <div class="col-sm-6 Journeyfonts">
+                <p class="mb-0">
+                  <span class="fa fa-arrow-right me-2"></span>5 Star
+                  Accommodations
+                </p>
+              </div>
+              <div class="col-sm-6 Journeyfonts">
+                <p class="mb-1">
+                  <span class="fa fa-arrow-right me-2"></span>150 Premiums City
+                  Tours
+                </p>
+              </div>
+              <div class="col-sm-6 Journeyfonts">
+                <p class="mb-1">
+                  <span class="fa fa-arrow-right me-2"></span>24/7 Services
+                  Tours
+                </p>
+              </div>
+            </div>
+            <!-- BUTTON -->
+            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =================== ABOUT US SECTION END === -->
+
+    <!-- =================== SERVICES SECTION ======= -->
+    <div class="container my-5">
+      <!-- SERVICES HEAD -->
+      <div class="row mt-5">
+        <div class="text-center">
+          <h3 class="Journeyfonts">
+            <span class="bi bi-filter-right fa-lg"></span>Our<span
+              class="bi bi-filter-left fa-lg"></span>
+          </h3>
+
+          <h2>Services</h2>
+        </div>
+      </div>
+      <!-- SERVICE CONTENT -->
+      <div class="row d-flex justify-content-center">
+        <div class="borderservices col-lg-3 mx-4 my-4 pb-5">
+          <span class="Journeyfonts">
+            <i class="fa-sharp fa-solid fa-globe fa-3x py-2"></i
+          ></span>
+          <h4 class="Journeyfonts">Flight Bookings</h4>
+          <p>
+            Take off to your dream destination with ease and convenience. Our
+            flight booking service enables you to search and book flights from
+            different airlines, providing options for departure times and ticket
+            classes, allowing you to find the best fit for your travel needs.
+          </p>
+        </div>
+        <div class="borderservices col-lg-3 mx-4 my-4 pb-5">
+          <span class="Journeyfonts"
+            ><i class="fa-solid fa-hotel fa-3x py-2"></i
+          ></span>
+          <h4 class="Journeyfonts">Hotel Reservation</h4>
+          <p>
+            Find the perfect place to stay with our wide selection of
+            accommodations, from luxury resorts to budget-friendly options, all
+            available for easy booking.
+          </p>
+        </div>
+        <div class="borderservices col-lg-3 mx-4 my-4 pb-5">
+          <span class="Journeyfonts">
+            <i class="fa-solid fa-hand-holding-heart fa-3x py-2"></i
+          ></span>
+          <h4 class="Journeyfonts">Travel Packages</h4>
+          <p>
+            Leave the planning to us and enjoy hassle-free travel. Our curated
+            travel packages combine flights, accommodations, transportation,
+            guided tours, and activities, allowing you to choose from
+            pre-designed itineraries or customize your own, based on your
+            preferences and budget.
+          </p>
+        </div>
+        <div class="borderservices col-lg-3 mx-4 my-4 pb-5">
+          <span class="Journeyfonts">
+            <i class="fa-solid fa-bookmark fa-3x py-2"></i
+          ></span>
+          <h4 class="Journeyfonts">Travel Blog and Tips</h4>
+          <p>
+            Gain inspiration and practical advice from our travel blog,
+            featuring articles, tips, and personal experiences to enhance your
+            journey.
+          </p>
+        </div>
+        <div class="borderservices col-lg-3 mx-4 my-4 pb-5">
+          <span class="Journeyfonts">
+            <i class="fa-sharp fa-solid fa-gear fa-3x py-2"></i
+          ></span>
+          <h4 class="Journeyfonts">24/7 Customer Support</h4>
+          <p>
+            We've got you covered at all times. Our dedicated customer support
+            team is available 24/7 to assist you with any inquiries, issues, or
+            emergencies during your travel planning or while on your trips.
+            Reach out to us through live chat, email, or our dedicated helpline
+            for immediate assistance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- =================== SERVICE SECTION END ==== -->
+
+    <!-- =================== DESTINATION ============ -->
+    <div class="container-fluid">
+      <!-- HEAD OF DESTINATION -->
+      <div class="text-center">
+        <h3 class="Journeyfonts">
+          <span class="bi bi-filter-right fa-lg"></span>Destination<span
+            class="bi bi-filter-left fa-lg"></span>
+        </h3>
+        <h2>Popular Destination</h2>
+      </div>
+      <!-- CONENT OF DESTINATION -->
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-lg-3 col-md-6 text-center">
+          <a class="hideunderlink" href="#">
+            <img
+              src="PICTURES/DESTINATION/canada.png"
+              class="destinationimg"
+              width="250px"
+              height="350px"
+              alt="Canada" />
+            <h2 class="text-center">Canada</h2>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <a class="hideunderlink" href="#">
+            <img
+              src="PICTURES/DESTINATION/El_nido_2.webp"
+              class="destinationimg"
+              width="250px"
+              height="350px"
+              alt="El nido" />
+            <h2 class="text-center">Philippines</h2>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <a class="hideunderlink" href="#">
+            <img
+              src="PICTURES/DESTINATION/Thailand_phi_phi.png"
+              class="destinationimg"
+              width="250px"
+              height="350px"
+              alt="Thailand" />
+            <h2 class="text-center">Thailand</h2>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <a class="hideunderlink" href="#">
+            <img
+              src="PICTURES/DESTINATION/Maldives.png"
+              class="destinationimg"
+              width="250px"
+              height="350px"
+              alt="Maldvies" />
+            <h2 class="text-center">Maldives</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- =================== DESTINATION END ======== -->
+    <!-- 
+
+  
+ -->
+    <!-- =================== PACKAGE START ========== -->
+    <div class="Container my-5">
+      <div class="container">
+        <!-- PACKAGE HEADER -->
+        <div class="row text-center">
+          <h3 class="Journeyfonts">
+            <span class="bi bi-filter-right fa-lg"></span>Best<span
+              class="bi bi-filter-left fa-lg"></span>
+          </h3>
+          <h2>Package Deal</h2>
+        </div>
+        <!-- PACKAGE CONTENT -->
+        <div class="row mt-5 text-center d-flex justify-content-center">
+          <div class="col-lg-5 col-md-6 mt-3">
+            <div class="card">
+              <img
+                src="pictures/DESTINATION/Southkorea_2.png"
+                class="card-img-top"
+                alt="boat" />
+              <div class="card-body cardtall">
+                <div
+                  class="d-flex border-bottom Journeyfonts card-item-topcard-item-top">
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-map-marker-alt me-2"></i>South Korea</small
+                  >
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-calendar-alt me-2"></i>3 days</small
+                  >
+                  <small class="flex-fill text-center py-1"
+                    ><i class="fa fa-user me-2"></i>2 Person</small
+                  >
+                </div>
+                <h3 class="card-text">PHP 2500</h3>
+                <p class="text-muted">
+                  Unlock the enchanting secrets of South Korea's vibrant
+                  culture, tantalize your taste buds with delectable cuisine,
+                  and immerse yourself in breathtaking landscapes. Your
+                  unforgettable adventure begins here!
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px"
+                  >Read More</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-3">
+            <div class="card">
+              <img
+                src="pictures/DESTINATION/singapore.png"
+                class="card-img-top"
+                alt="boat" />
+              <div class="card-body cardtall">
+                <div class="d-flex border-bottom Journeyfonts card-item-top">
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-map-marker-alt me-2"></i>Singapore</small
+                  >
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-calendar-alt me-2"></i>5 days</small
+                  >
+                  <small class="flex-fill text-center py-1"
+                    ><i class="fa fa-user me-2"></i>3 Person</small
+                  >
+                </div>
+                <h3 class="card-text">PHP 5500</h3>
+                <p class="text-muted card-text">
+                  Unleash the extraordinary in Singapore! Immerse in culture,
+                  indulge in flavors, and embrace the vibrant cityscape. Book
+                  now for an unforgettable 5-day escape!
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px"
+                  >Read More</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-3">
+            <div class="card">
+              <img
+                src="pictures/DESTINATION/Tokyo_5.png"
+                class="card-img-top"
+                alt="boat" />
+              <div class="card-body cardtall">
+                <div class="d-flex border-bottom Journeyfonts">
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-map-marker-alt me-2"></i>japan</small
+                  >
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-calendar-alt me-2"></i>3 days</small
+                  >
+                  <small class="flex-fill text-center py-1"
+                    ><i class="fa fa-user me-2"></i>2 Person</small
+                  >
+                </div>
+                <h3 class="card=text">PHP 3500</h3>
+                <p class="text-muted">
+                  Unlock Japan's magic in 3 days! Immerse in traditions, explore
+                  iconic landmarks, and savor exquisite cuisine. Book now for an
+                  unforgettable journey!"
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px"
+                  >Read More</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-3">
+            <div class="card">
+              <img
+                src="pictures/DESTINATION/italy_4.png"
+                class="card-img-top"
+                alt="boat" />
+              <div class="card-body cardtall">
+                <div class="d-flex border-bottom Journeyfonts">
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-map-marker-alt me-2"></i>Italy</small
+                  >
+                  <small class="flex-fill text-center border-end py-1"
+                    ><i class="fa fa-calendar-alt me-2"></i>3 days</small
+                  >
+                  <small class="flex-fill text-center py-1"
+                    ><i class="fa fa-user me-2"></i>2 Person</small
+                  >
+                </div>
+                <h3 class="card=text">PHP 4500</h3>
+                <p class="text-muted">
+                  Italy's essence in 3 days! Art, cuisine, and romance await.
+                  Book now and embrace the magic!"
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px"
+                  >Read More</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================PACKAGE END ============= -->
+    <!-- 
+
+
+
+  
+ -->
+    <!-- =================== TOUR GUIDES ============ -->
+    <div class="container borderngcards">
+      <h3 class="Journeyfonts">
+        <span class="bi bi-filter-right fa-lg"></span>Our<span
+          class="bi bi-filter-left fa-lg"></span>
+      </h3>
+      <h1>Tour Guides</h1>
+      <div class="main-container">
+        <!-- FIRST -->
+        <div class="cards">
+          <img
+            src="PICTURES/tourguide/tourguide.png"
+            class="cardsprofile"
+            alt="tourguide1" />
+          <h4>Alex Turner</h4>
+          <p>Cultural Tour Guide</p>
+
+          <div class="social-media">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="PICTURES/ICON/FACEBOOK.png"
+                class="iconngtourguide"
+                width="30px"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="PICTURES/ICON/instagram.png"
+                class="iconngtourguide"
+                width="30px"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img
+                src="PICTURES/ICON/twitter.png"
+                class="iconngtourguide"
+                width="30px"
+            /></a>
+            <a href="https://www.tiktok.com/"
+              ><img
+                src="PICTURES/ICON/tiktok.png"
+                class="iconngtourguide"
+                width="30px"
+            /></a>
+          </div>
+        </div>
+        <!-- SECOND -->
+        <div class="cards">
+          <img
+            src="PICTURES/tourguide/tourguide2.png"
+            class="cardsprofile"
+            alt="tourguide1" />
+          <h4>Ethan Anderson</h4>
+          <p>Adventure Tour Guide</p>
+
+          <div class="social-media">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="PICTURES/ICON/FACEBOOK.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="PICTURES/ICON/instagram.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img
+                src="PICTURES/ICON/twitter.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://www.tiktok.com/"
+              ><img
+                src="PICTURES/ICON/tiktok.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+          </div>
+        </div>
+        <!-- THIRD -->
+        <div class="cards">
+          <img
+            src="PICTURES/tourguide/tourguide3.png"
+            class="cardsprofile"
+            alt="tourguide1" />
+          <h4>Benjamin Lewis</h4>
+          <p>Nature Tour Guide</p>
+
+          <div class="social-media">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="PICTURES/ICON/FACEBOOK.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="PICTURES/ICON/instagram.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img
+                src="PICTURES/ICON/twitter.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+            <a href="https://www.tiktok.com/"
+              ><img
+                src="PICTURES/ICON/tiktok.png"
+                width="30px"
+                class="iconngtourguide"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =================== TOUR GUIDES END ======== -->
+
+    <!-- =================== JOIN US ================ -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h2>Join us now for special deals and events</h2>
+      </div>
+      <div class="row">
+        <form class="text-center">
+          <div class="form-group position-relative">
+            <input
+              type="email"
+              class="form-control w-100"
+              placeholder=" Please write your email" />
+            <input
+              class="btn btn-primary position-absolute top-0 end-0"
+              type="submit"
+              value="Join Now! " />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- =================== JOIN US END ============ -->
+
+    <!-- =================== FOOTER ================= -->
+    <footer class="container-fluid footercolor mt-5 p-3">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>Guide to the Philippines</h3>
+          <ul>
+            <li>About us</li>
+            <li>Frequently Asked Questions</li>
+            <li>Data Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3>Travel Services</h3>
+          <ul>
+            <li>Tours & Activity Packages</li>
+            <li>Luxury Resorts Packages</li>
+            <li>All-inclusive Family Vacation Packages</li>
+            <li>Honeymoon Packages</li>
+            <li>Car Rentals</li>
+            <li>Airport Transfers</li>
+            <li>Hotel Booking</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3>Top Distinations</h3>
+          <ul>
+            <li>Philippines</li>
+            <li>South Korea</li>
+            <li>Japan</li>
+            <li>Australia</li>
+            <li>Italy</li>
+            <li>Spain</li>
+            <li>Thailand</li>
+            <li>Egypt</li>
+            <li>Switzerland</li>
+            <li>China</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Request a quote</h3>
+          <ul>
+            <li>Solo Travel</li>
+            <li>Group Travel</li>
+            <li>Corporate Travel</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-lg-4 col-sm-4">
+          <h3>Find us on social media</h3>
+        </div>
+        <div class="col-lg-3 col-sm-3">
+          <div>
+            <img src="PICTURES/ICON/FACEBOOK.png" width="30px" />
+            <img src="PICTURES/ICON/instagram.png" width="30px" />
+            <img src="pictures/ICON/twitter.png" width="30px" />
+            <img src="pictures/ICON/messenger.png" width="40px" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =================== FOOTER END ============= -->
   </body>
 </html>
