@@ -153,6 +153,9 @@ li {
   margin-bottom: 10px;
   padding: 2px;
 }
+.cardsprofile:hover {
+  outline: 4px solid lightgray;
+}
 .cards p {
   color: rgb(178, 218, 118);
 }
@@ -189,9 +192,6 @@ h1 {
   display: flex;
   gap: 20px;
   align-items: center;
-}
-.content-service {
-  padding-top: 10px;
 }
 .borderservices:hover {
   background-color: rgb(252, 255, 244);
@@ -230,15 +230,6 @@ a:hover .destinationimg {
   width: 450px;
   padding: 0px;
 }
-.cardiehotel .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 260px;
-}
-.cardiehotel .card-body .card-text {
-  margin-top: 10px;
-}
 .cardiehotel:hover {
   background-color: rgb(252, 255, 244);
   box-shadow: 5px 5px 5px lightgray;
@@ -254,9 +245,9 @@ a:hover .destinationimg {
 /* ===================== PACKAGES =================================== */
 .cardtall {
   height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+.tipover:hover {
+  background-color: rgb(252, 255, 244);
 }
 /* ===================== PACKAGES END ================================ */
 /* 
