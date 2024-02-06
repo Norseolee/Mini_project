@@ -244,10 +244,23 @@ a:hover .destinationimg {
 */
 /* ===================== PACKAGES =================================== */
 .cardtall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 300px;
 }
 .tipover:hover {
   background-color: rgb(252, 255, 244);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-info {
+  color: rgb(173, 170, 170);
+  font-size: 13px;
 }
 /* ===================== PACKAGES END ================================ */
 /* 
